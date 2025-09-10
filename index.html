@@ -5,61 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vaishnavi H | Portfolio Resume</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #333;
-      line-height: 1.6;
+    body { 
+      font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; 
+      background: #fff; color: #333; line-height: 1.6; 
       scroll-behavior: smooth;
     }
-    /* --- Navigation --- */
+
+    /* Sticky Navbar */
     nav {
       position: sticky;
       top: 0;
-      background: #008080;
-      color: #fff;
-      padding: 0.8rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
+      background: #006666;
+      padding: 0.7rem;
       z-index: 1000;
+      text-align: center;
     }
     nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
+      color: #fff; margin: 0 1rem; text-decoration: none; 
+      font-weight: bold; transition: color 0.3s ease;
     }
-    nav a:hover {
-      color: #ffeb3b;
-    }
+    nav a:hover { color: #ffdd99; }
 
-    /* --- Header --- */
     header {
-      background: #008080;
-      color: #fff;
-      padding: 3rem 2rem;
-      text-align: center;
+      background: #008080; color: #fff; padding: 3rem; text-align: center;
       animation: fadeIn 2s ease-in;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-    }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin-top: 0.5rem; font-size: 1.1rem; }
 
-    /* --- Sections --- */
     section {
-      padding: 2rem;
-      max-width: 950px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(20px);
+      padding: 2.5rem; max-width: 950px; margin: auto;
+      opacity: 0; transform: translateY(30px);
       animation: fadeInUp 1s ease forwards;
     }
     section:nth-of-type(1) { animation-delay: 0.2s; }
@@ -71,68 +47,36 @@
     section:nth-of-type(7) { animation-delay: 1.4s; }
     section:nth-of-type(8) { animation-delay: 1.6s; }
 
-    h2 {
-      color: #008080;
-      border-bottom: 2px solid #008080;
-      display: inline-block;
-      margin-bottom: 1rem;
-    }
-
-    /* --- Lists & Cards --- */
+    h2 { color: #008080; border-bottom: 2px solid #008080; display: inline-block; margin-bottom: 1rem; }
     ul { padding-left: 1.2rem; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
     .card {
-      background: #f9f9f9;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      transition: all 0.3s ease;
+      background: #f9f9f9; padding: 1rem; border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: all 0.3s ease;
     }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
 
-    /* --- Footer --- */
-    footer {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      animation: fadeIn 2s ease-in;
-    }
+    footer { background: #f4f4f4; text-align: center; padding: 1rem; margin-top: 2rem; font-size: 0.9rem; animation: fadeIn 2s ease-in; }
 
-    /* --- Animations --- */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    /* Animations */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
   <!-- Navigation -->
   <nav>
-    <a href="#summary">Summary</a>
+    <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#certifications">Certifications</a>
-    <a href="#education">Education</a>
-    <a href="#achievements">Achievements</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <!-- Header -->
-  <header>
+  <header id="about">
     <h1>Vaishnavi H</h1>
     <p>📞 +91 8618300924 | 
        <a href="mailto:vaishnaviharshavardhana@gmail.com" style="color:#fff;">Email</a> | 
@@ -140,54 +84,88 @@
     </p>
   </header>
 
-  <!-- Sections -->
-  <section id="summary">
+  <!-- Summary -->
+  <section>
     <h2>Professional Summary</h2>
-    <p>Dynamic Marketing & Data Analytics professional with 2+ years of experience in analytics, reporting, community engagement, and digital marketing. Skilled in community-driven insights, advocacy, and building thriving online communities across platforms. Experienced in organic visibility, keyword research, creator collaborations, and storytelling formats that drive engagement and thought leadership. Proficient in SQL, Power BI, Tableau, and Oracle HCM Cloud with success in building dashboards, validating data, and automating workflows. Certified in AI, Data Science, Cloud, and Digital Marketing. Strong understanding of digital culture, optimization, and high-growth startup environments.</p>
+    <p>Dynamic Marketing & Data Analytics professional with 2+ years of experience in analytics, reporting, community engagement, and digital marketing. Skilled in community-driven insights, advocacy, and building thriving online communities across platforms. Experienced in organic visibility, keyword research, creator collaborations, and storytelling formats that drive engagement and thought leadership. Proficient in SQL, Power BI, Tableau, and Oracle HCM Cloud with success in building dashboards, validating data, and automating workflows. Certified in AI, Data Science, Cloud, and Digital Marketing with hands-on projects bridging insights and growth strategies. Strong understanding of digital culture, optimization, and high-growth startup environments.</p>
   </section>
 
+  <!-- Experience -->
   <section id="experience">
     <h2>Professional Experience</h2>
     <ul>
       <li><b>Wet-Stock Management Support Analyst – Gilbarco Veeder-Root (Dec 2024 – Present)</b><br>
-        - Wrote company pitch using statistical data analysis<br>
-        - Retrieved and validated datasets using SQL & Salesforce pipelines<br>
-        - Applied root-cause analysis to resolve variances & alarms<br>
-        - Integrated Salesforce data, reducing manual effort by 30%<br>
-        - Improved incident response efficiency by 30%</li>
+        • Written company pitch to crack projects using statistical data analysis<br>
+        • Retrieved and validated datasets using SQL & Salesforce pipelines<br>
+        • Applied root-cause analysis to resolve variances & alarms<br>
+        • Integrated Salesforce data, reducing manual effort by 30%<br>
+        • Improved incident response efficiency by 30%</li>
       <li><b>Associate 2 | Oracle HCM Data Analyst – PwC AC (May 2022 – Sep 2022)</b><br>
-        - Delivered customized OTBI reports/dashboards<br>
-        - Built SQL queries, functions, and procedures<br>
-        - Centralized data to improve productivity<br>
-        - Provided technical support for OTBI reports</li>
+        • Delivered customized OTBI reports/dashboards in Oracle Fusion HCM<br>
+        • Built SQL queries, functions, procedures<br>
+        • Centralized data to increase productivity<br>
+        • Provided technical support for OTBI reports</li>
       <li><b>Associate | Oracle HCM Data Analyst – PwC AC (Sep 2021 – May 2022)</b><br>
-        - Developed HR dashboards & centralized reporting (boosted productivity 15%)<br>
-        - Conducted HR/benefits analysis with Power BI & Excel<br>
-        - Enhanced Fast formulas<br>
-        - Coordinated PwC intern training program for 25+ interns</li>
+        • Developed HR dashboards & centralized reporting, boosting productivity by 15%<br>
+        • Conducted HR/benefits data analysis in Power BI & Excel<br>
+        • Enhanced Fast formulas<br>
+        • Coordinated PwC intern training program (25+ interns)</li>
       <li><b>Innovation & Marketing Lead – Arni Garden Boutique (Jul 2020 – Dec 2020)</b><br>
-        - Designed digital marketing campaigns (boosted revenue)<br>
-        - Executed social media promotions</li>
+        • Designed digital marketing campaigns, boosted revenue<br>
+        • Executed social media promotions</li>
       <li><b>Community & Events Coordinator – PSR Events (2017 – 2019)</b><br>
-        - Hosted events & engaged audiences<br>
-        - Delivered client engagement campaigns</li>
+        • Hosted & managed events, driving audience engagement<br>
+        • Strengthened client relationships</li>
       <li><b>In-Plant Trainee – Hindustan Aeronautical Limited (Jan 2020)</b><br>
-        - Studied applications of EEE in aviation systems</li>
+        • Studied applications of electrical & electronics in aviation systems</li>
     </ul>
   </section>
 
+  <!-- Projects -->
   <section id="projects">
     <h2>Project Portfolio</h2>
     <ul>
-      <li>Smart Shopping Assistant – Discount-tracking tool for consumer engagement</li>
-      <li>Automated Expense Manager – Excel → Power BI pipeline</li>
-      <li>Fabric Intelligence – Analysed 200+ fabrics for market trends & sourcing insights</li>
+      <li>Smart Shopping Assistant – Designed discount-tracking tool</li>
+      <li>Automated Expense Manager – Built Excel → Power BI pipeline</li>
+      <li>Fabric Intelligence – Analysed 200+ fabrics for market trends</li>
     </ul>
   </section>
 
+  <!-- Skills -->
   <section id="skills">
     <h2>Technical Skills</h2>
     <div class="grid">
-      <div class="card"><b>Social & Growth:</b><br>Community Building, Social Media, SEO, Advocacy, UGC Campaigns</div>
+      <div class="card"><b>Social & Growth:</b><br>Community Building, Social Media Campaigns, SEO, Digital Marketing, Advocacy, UGC</div>
       <div class="card"><b>Analytics:</b><br>Python, SQL, PL/SQL, Power BI, Tableau, Grafana</div>
-      <div class
+      <div class="card"><b>Databases:</b><br>Oracle, SQL Server</div>
+      <div class="card"><b>Cloud Platforms:</b><br>Oracle HCM Cloud, Oracle Dev6, Google Suite</div>
+      <div class="card"><b>AI/ML:</b><br>Generative AI, ChatGPT</div>
+      <div class="card"><b>Other Tools:</b><br>Excel, Insite360, Talk-desk, MS Office</div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card"><b>AI & Analytics</b><br>IBM AI Fundamentals<br>Intro to Data Science<br>Data Science Essentials with Python<br>Data Analytics Essentials<br>RESTful APIs</div>
+      <div class="card"><b>Cloud & Data</b><br>IBM Python for Data Science<br>Data Visualization with Power BI<br>Oracle Cloud (App Dev, Integration, Digital Assistant)<br>Power BI Projects</div>
+      <div class="card"><b>Digital Marketing</b><br>Intro to Digital Marketing<br>Digital Marketing Tool Basics<br>SEO for Beginners</div>
+      <div class="card"><b>Academic & Domain</b><br>Minor in CS<br>Finance (Economics, Stock Market)<br>Smart Power Control<br>Wellness Certification</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:vaishnaviharshavardhana@gmail.com">vaishnaviharshavardhana@gmail.com</a><br>
+       🔗 LinkedIn: <a href="https://linkedin.com/in/vaishnavi-h-2683a7217" target="_blank">linkedin.com/in/vaishnavi-h-2683a7217</a><br>
+       📞 Phone: +91 8618300924</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vaishnavi H | Interactive Resume Website</p>
+  </footer>
+</body>
+</html>
